@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing Events | Past Events</title>
+    <title>Amazing Events | Upcoming Events</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
@@ -42,31 +42,46 @@
         
     </header>
 
-    <main class="my-5">
+    <main class="mb-5">
 
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active ">
                 <img src="../images/optional_banner_1.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>UPCOMING EVENTS</h5>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_2.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>UPCOMING EVENTS</h5>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_3.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>UPCOMING EVENTS</h5>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_4.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>UPCOMING EVENTS</h5>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_5.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>UPCOMING EVENTS</h5>
+                </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -114,44 +129,47 @@
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
             </form>
-        
-            <div class="container row gap-5 d-flex justify-content-center"> 
-                    
-                    <section class="col-12 col-md-6 col-lg-4 col-xxl-2  boxevent shadow-lg rounded">
-                        <img class="col-2 w-75  mx-auto d-block py-3" src="../images/costume_party.jpg" alt="costume_party">
-                        <div class="">
-                            <h4 class="text-center">Halloween Night</h4>
-                            <p class="text-center px-2">Come in your scariest costume character to win amazing prizes</p>
-                        </div>
-                        <div class="d-flex flex-row justify-content-evenly">
-                            <p>Price: 12</p>
-                            <a class="text-decoration-none text-dark details" href="./3.html">Details</a>
-                        </div>
-                    </section>
 
-                    <section class="col-12 col-md-6 col-lg-4 col-xxl-2  boxevent shadow-lg rounded">
-                        <img class="col-2 w-75  mx-auto d-block py-3" src="../images/music_concert.jpg" alt="music_concert">
-                        <div class="">
-                            <h4 class="text-center">Metallica in concert</h4>
-                            <p  class="text-center px-2">The only concert of the most emblematic band in the world</p>
-                        </div>
-                        <div class="d-flex flex-row justify-content-evenly">
-                            <p>Price: 150</p>
-                            <a class="text-decoration-none text-dark details" href="./4.html">Details</a>
-                        </div>
-                    </section>
-
-                    <section class="col-12 col-md-6 col-lg-4 col-xxl-2  boxevent shadow-lg rounded">
-                        <img class="col-2 w-75  mx-auto d-block py-3" src="../images/cinema.jpg" alt="cinema">
-                        <div class="">
-                            <h4 class="text-center">Avengers</h4>
-                            <p  class="text-center px-2">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes</p>
-                        </div>
-                        <div class="d-flex flex-row justify-content-evenly">
-                            <p>Price: 250</p>
-                            <a class="text-decoration-none text-dark details" href="./7.html">Details</a>
-                        </div>
-                    </section>
+          <div id="contenedorCards" class="container d-flex justify-content-center text-center row row-cols-1 row-cols-md-2 g-4">
+                <!-- <div class="col">
+                  <div class="card h-100 card border-danger">
+                    <img src="../images/costume_party.jpg" class="card-img-top h-50 p-3" alt="costume_party">
+                    <div class="card-body">
+                      <h5 class="card-title">Halloween Night</h5>
+                      <p class="card-text">Come in your scariest costume character to win amazing prizes.</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-evenly">
+                        <p>Price: 12</p>
+                        <a class="text-decoration-none text-dark details" href="./3.html">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 card border-danger">
+                    <img src="../images/music_concert.jpg" class="card-img-top h-50 p-3" alt="music_concert">
+                    <div class="card-body">
+                      <h5 class="card-title">Metallica in concert</h5>
+                      <p class="card-text">The only concert of the most emblematic band in the world..</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-evenly">
+                        <p>Price: 150</p>
+                        <a class="text-decoration-none text-dark details" href="./4.html">Details</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 card border-danger">
+                    <img src="../images/cinema.jpg" class="card-img-top h-50 p-3" alt="cinema">
+                    <div class="card-body">
+                      <h5 class="card-title">Avengers</h5>
+                      <p class="card-text">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes.</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-evenly">
+                        <p>Price: 250</p>
+                        <a class="text-decoration-none text-dark details" href="./7.html">Details</a>
+                    </div>
+                  </div>
+                </div> -->
             </div>
         </div>
     </main>
@@ -165,5 +183,7 @@
         <h6 class="d-flex col-4 col-md-6 col-xxl-10 align-items-center justify-content-end">COHORT 49</h6>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../data/data.js"></script>
+    <script src="../data/upcomingEvents.js"></script>
 </body>
 </html>

@@ -42,31 +42,46 @@
         
     </header>
 
-    <main>
+    <main class="mb-5">
 
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active ">
                 <img src="../images/optional_banner_1.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CONTACT US</h5>
+              </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_2.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CONTACT US</h5>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_3.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CONTACT US</h5>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_4.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CONTACT US</h5>
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="../images/optional_banner_5.jpg" class="tamañoimagencarousel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CONTACT US</h5>
+                </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -81,23 +96,23 @@
 
             <form class="form d-flex col-12 flex-column align-items-center pt-5" action="./show_data.html" method="get">
     
-                <div class="name d-flex flex-column col-5">
+                <div class="name d-flex flex-column col-8">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
                 </div>
 
-                <div class="email d-flex flex-column col-5 pt-3">
+                <div class="email d-flex flex-column col-8 pt-3">
                 <label for="Email">Email:</label>
                 <input type="text" id="Email" name="user-email">
                 </div>
 
-                <div class="message d-flex flex-column col-5 pt-3">
+                <div class="message d-flex flex-column col-8 pt-3">
                     <p>Message:</p>
                     <label for="Message"></label>
                     <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
                 </div>
 
-                <div class="submit pt-2 d-flex justify-content-end col-5 ">
+                <div class="submit pt-2 d-flex justify-content-end col-8 ">
                     <input class="submit mb-5" type="submit" value="Submit">
                 </div>
             </form>
